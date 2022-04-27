@@ -1,0 +1,10 @@
+echo "# Infra-as-structure-codes" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Surelaarrgh/Infra-as-structure-codes.git
+git push -u origin main
+
+
+list of git commannds
