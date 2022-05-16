@@ -10,6 +10,6 @@ functions:
     handler: src/hello.handler
     events:
       - httpApi:
-          path: /\
+          path: \
           method: get
  
