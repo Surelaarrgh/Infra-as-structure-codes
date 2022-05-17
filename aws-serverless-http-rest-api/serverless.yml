@@ -4,10 +4,16 @@ frameworkVersion: '3'
 provider:
   name: aws
   runtime: nodejs14.x
+  iamRoleStatement:
+    - Efeect: Allow
+      Action:
+        - dynamodb:*
+      Resource:
+        - arn:aws:dynamodb:us-east-1:162677776117:table/TodoTabl
 
 functions:
-  hello: 
-    handler: src/hello.handler
+  addTodo: 
+    handler: src/addTodo.handler
     events:
       - httpApi:
           path: /
