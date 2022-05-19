@@ -32,6 +32,6 @@ const addTodo = async (event) => {
   };
 };
 
-module.export = {
+module.exports = {
   handler: addTodo
 }
